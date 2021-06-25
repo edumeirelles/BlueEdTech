@@ -8,7 +8,9 @@
             Eduardo Meirelles Nogueira - Desenvolvedor
         </title>
         <link rel="stylesheet" type="text/css" href="static/style.css">
-        
+        <style>
+           
+        </style>
 
     </head>
     <body>
@@ -22,7 +24,7 @@
                 </div>
             </div>
         </div>
-        <div class="div-main">
+        <div id="divMainPerfil">
             <div class="div2">
                 <div class="resumo"> <!--foto, pequeno texto-->
                 
@@ -154,10 +156,10 @@
                                                   
                             <h3>Hard Skills</h3>
                             <div class="hard-skills">
-
+                                
                                 {% for i in hard_skills %}
                                 <p>{{i.skill}}</p>
-                                <div class="barra-{{i.tag}}">
+                                <div class="barra-{{i.tag}}" style="@keyframes '{{i.tag}}' {from{width: 30px;} to{width: 100%; }}">
                                     <div class="barras" id="{{i.tag}}"></div>
                                 </div>
                                 {% endfor %}
@@ -229,11 +231,19 @@
                 </div>
             </div>
             
-            <div> <!--rodapé-->
-    
+
+        </div>
+        <div id="divMainPortifolio" class="div_main">
+            <div class="div2">
+                <div class="projetos_titulo">
+                    <h2>Projetos</h2>
+                </div>
+                
             </div>
         </div>
-        
+        <!--<div> 
+            <h3>2021 - Desenvolvido por Eduardo Meirelles Nogueira</h3>
+        </div>-->
         <script type="text/javascript" src="/static/script.js"></script>
     </body>
 </html>
