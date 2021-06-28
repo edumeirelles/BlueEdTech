@@ -8,43 +8,63 @@
             Eduardo Meirelles Nogueira - Desenvolvedor
         </title>
         <link rel="stylesheet" type="text/css" href="static/style.css">
-        <style>
-           
-        </style>
 
     </head>
     <body>
         <div class="div1">
+
             <div class="menu"> <!--menu-->
+
                 <div class="menu_item" id="perfil">
                     <h3>Perfil</h3>
                 </div>
                 <div class="menu_item" id="portifolio">
                     <h3>Portifolio</h3>
                 </div>
+
             </div>
         </div>
+
         <div id="divMainPerfil">
+
             <div class="div2">
+
                 <div class="resumo"> <!--foto, pequeno texto-->
                 
                     <div class="imagem">
                         <img src="static/eduardo.jpg" alt="Eduardo"/>
                     </div>
-                    
-                    <div class="perfil item">
+                    <div class="perfil">
+
                         <h1>Eduardo Meirelles Nogueira</h1>
                         <h3>Desenvolvedor Python, HTML5, CSS3</h3>
-                        <p>edumeirelles@yahoo.com.br<br/>(16) 99260 - 1155<br/>
-                        <a href="http://www.linkedin.com/in/eduardo-meirelles-nogueira/" target="_blank">linkedin.com/in/eduardo-meirelles-nogueira/</a>
-                        <br/><a href="http://www.facebook.com/edumeirelles" target="_blank">facebook.com/edumeirelles</a>
-                        <br/><a href="http://www.github.com/edumeirelles" target="_blank">github.com/edumeirelles</a></p>
+                        <p>edumeirelles@yahoo.com.br<br/>(16) 99260 - 1155</p>
+
+                        <div class="bloco_icone">
+                            <div class="icone">
+                                <a href="http://www.linkedin.com/in/eduardo-meirelles-nogueira/" target="_blank"><img src="static/linkedin-white.png" alt="Logo LinkedIn"></a>
+                            </div>
+                            <div class="icone">
+                                <a href="http://www.facebook.com/edumeirelles" target="_blank"><img src="static/facebook-white.png" alt="Logo Facebook"></a>
+                            </div>
+                            <div class="icone">
+                                <a href="http://www.github.com/edumeirelles" target="_blank"><img src="static/github-white.png" alt="Logo GitHub"></a>
+                            </div>
+                            <div class="icone">
+                                <a href="https://api.whatsapp.com/send?phone=5516992601155" target="_blank"><img src="static/whatsapp-white.png" alt="Logo WhatsApp"></a>
+                            </div>     
+                        </div>
+                                       
                     </div>
+
                 </div>
+
             </div>
     
             <div class="div3">
+
                 <div class="curriculo"> <!--currículo-->
+
                     <div class="experiencia"> <!--experiência-->
                         <h2>Experiência Profissional</h2>
                         <div class="item">
@@ -131,6 +151,7 @@
                         </div>       
         
                     </div>
+                    
                     <div class="formacao"> <!--formação e habilidades-->
         
                         <h2>Formação</h2>
@@ -228,7 +249,9 @@
                             </ul>
                         </div>
                     </div>
+
                 </div>
+
             </div>
             
 
@@ -241,7 +264,7 @@
                     </div>
                     <div class="item_projetos"> <!--Site-->
                         <div class="imagem_portifolio">
-                            <img src="static/page_eduardo.png" alt="Site Eduardo" id="imagem_site">
+                            <img src="static/page_eduardo.png" alt="Site Eduardo">
                         </div>                       
                         <div class="texto_portifolio">
                             <h2>Website Pessoal - Eduardo Meirelles Nogueira</h2>
@@ -250,27 +273,8 @@
                                  e, por outro lado, para aplicar os conhecimentos adquiridos em aula durante os Módulos 1 e 2 do curso de programação na BlueEdTech.
                                   Este projeto foi elaborado paralelamente às atividades do curso. O site foi desenvolvido com as linguagens HTML5, 
                                   CSS3, JavaScript e Python com Flask. Foi publicado como uma aplicação em nuvem na plataforma Heroku. 
+                                  Clique <a href="https://github.com/edumeirelles/Pessoal/tree/main/Page_Eduardo" target="_blank"><b>aqui</b></a> para acessar os códigos desta página no meu GitHub.
                             </p>
-                        </div>
-                    </div>
-
-                    <div class="bloco_divisoria">
-                        <div class="divisoria"></div>
-                    </div>
-                    
-                    <div class="item_projetos"> <!--Jogo Ficção Interativa Python-->
-                        <div class="texto_portifolio">
-                            <h2>Jogo Ficção Interativa - Banda Turma2B</h2>
-                            <p>Este foi o projeto final do Módulo 1 no curso de programação na BlueEdTech. 
-                                Eu e meus colegas Rafael Freitas e Jorge Teixeira, criamos um jogo de ficção interativa, onde o jogador deve escolher as ações de uma banda em turnê. 
-                                O jogador deve escolher as ações na sequência correta para acessar as músicas que serão tocadas durante o show. Foram incluidos eventos aleatórios,
-                                 que podem ser disparados em certos momentos, que fazem o jogador voltar ao estado inicial do jogo. Dependendo das opções escolhidas, o jogador pode receber
-                                  recompensas ou punições. Ao final o jogo exibe um relatório com o desempenho do jogador. O jogo foi desenvolvido inteiramente em Python. Foi incluída a 
-                                  biblioteca Pygame para que fosse possível executar os arquivos de áudio.
-                            </p>
-                        </div>
-                        <div class="imagem_portifolio">
-                            <img src="static/Projeto_jogo.gif" alt="Projeto Jogo Ficção interativa">
                         </div>
                     </div>
 
@@ -279,13 +283,47 @@
                     </div>
 
                     <div class="item_projetos"><!--Calculadora dano - Kodular-->
-                        <div>
-                            <h1>imagem</h1>
+                        <div class="texto_portifolio">
+                            <h2>Calculadora de Dano</h2>
+                            <p>A Calculadora de Dano foi uma atividade desenvolvida no curso de programação na BlueEdTech para colocar em prática o aprendizado em HTML, CSS e JavaScript. 
+                                O jogo consiste em escolher um inimigo e uma arma. 
+                                Cada inimigo possui um quantidade fixa de pontos de vida e cada arma conta com um número de dano fixo adicionado de um número que é gerado aleatoriamente de 1 a 10 pontos (análogo a um dado de 10 faces).
+                                O jogador deve clicar no botão "Calcular Dano" até que o dano da arma seja maior ou igual os pontos de vida do inimigo escolhido.
+                                 Dependendo da arma escolhida não será possível derrotar os inimigos mais fortes. Clique <a href="https://github.com/edumeirelles/Blue_modulo2/tree/main/Aula_09/Projeto_01_Calculadora_de_danos_JS" target="_blank"><b>aqui</b></a> para acessar os códigos deste projeto no meu GitHub.
+                            </p>
                         </div>
-                        <div>
-                            <h1>texto</h1>
+                        <div class="imagem_portifolio">
+                            <img src="static/calculadora_dano.png" alt="Calduladora de Dano">
                         </div>
                     </div>
+
+                    <div class="bloco_divisoria">
+                        <div class="divisoria"></div>
+                    </div>
+                    
+                    <div class="item_projetos"> <!--Jogo Ficção Interativa Python-->
+                        
+                        <div class="imagem_portifolio">
+                            <img src="static/Projeto_jogo.gif" alt="Projeto Jogo Ficção interativa">
+                        </div>
+                        <div class="texto_portifolio">
+                            <h2>Jogo Ficção Interativa - Banda Turma2B</h2>
+                            <p>Este foi o projeto final do Módulo 1 no curso de programação na BlueEdTech. 
+                                Eu e meus colegas Rafael Freitas e Jorge Teixeira, criamos um jogo de ficção interativa, onde o jogador deve escolher as ações de uma banda em turnê. 
+                                O jogador deve escolher as ações na sequência correta para acessar as músicas que serão tocadas durante o show. Foram incluidos eventos aleatórios,
+                                 que podem ser disparados em certos momentos, que fazem o jogador voltar ao estado inicial do jogo. Dependendo das opções escolhidas, o jogador pode receber
+                                  recompensas ou punições. Ao final o jogo exibe um relatório com o desempenho do jogador. O jogo foi desenvolvido inteiramente em Python. Foi incluída a 
+                                  biblioteca Pygame para que fosse possível executar os arquivos de áudio. Clique <a href="https://github.com/edumeirelles/Blue_modulo1/tree/main/Projeto%20Jogo/Banda_T2B" target="_blank"><b>aqui</b></a> para acessar os códigos do projeto no meu GitHub.
+                            </p>
+                        </div>
+                        
+                    </div>
+
+                    <div class="bloco_divisoria">
+                        <div class="divisoria"></div>
+                    </div>
+
+                    
                     <div class="item_projetos"> <!--Apresentação Kodular-->
                         <div>
                             <h1>imagem</h1>

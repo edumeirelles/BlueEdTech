@@ -49,7 +49,7 @@ body{
 .click{
     display: flex;
     justify-content: center;
-    width: 20%;
+    width: 35%;
     border-radius: 50px;
     transition: 0.15s;
     box-shadow: 0px 0px 10px #284992;
@@ -99,6 +99,19 @@ body{
 
 .perfil p, .perfil h1, .perfil h3{
     margin: 0px;
+}
+
+.bloco_icone{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 75%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.icone img{
+    height: 50px;
 }
 
 @media (max-width:768px){
@@ -294,7 +307,7 @@ body{
 }
 .divisoria{
     height: 10px;
-    width: 60%;
+    width: 100%;
     background-color: #23387a;
     box-shadow: 4px 4px 10px #17244e;
     margin: 75px;
@@ -336,5 +349,6 @@ a{
 }
 a:hover{
     color: skyblue;
+    cursor: pointer;
 }
 
