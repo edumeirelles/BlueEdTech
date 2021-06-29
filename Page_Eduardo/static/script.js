@@ -36,6 +36,28 @@ for (var i = 0; i < menu.length; i++) {
   })
 }
 
+const icones = document.getElementsByClassName("icone");
+
+for (const icone of icones){
+    icone.addEventListener("mousedown", function(){
+      this.classList.add("click_icone");
+      this.classList.remove("icone");
+    })
+    icone.addEventListener("mouseup", function(){
+      this.classList.add("icone");
+      this.classList.remove("click_icone");
+    })
+    icone.addEventListener("mouseleave", function(){
+      this.classList.add("icone");
+      this.classList.remove("click_icone");
+    })
+}
+
+
+
+
+
+
 const divMainPerfil = document.getElementById("divMainPerfil");
 const divMainPortifolio = document.getElementById("divMainPortifolio")
 const portifolio = document.getElementById("portifolio");

@@ -34,11 +34,12 @@
                     <div class="imagem">
                         <img src="static/eduardo.jpg" alt="Eduardo"/>
                     </div>
-                    <div class="perfil">
+                    <div class="perfil item">
 
                         <h1>Eduardo Meirelles Nogueira</h1>
                         <h3>Desenvolvedor Python, HTML5, CSS3</h3>
-                        <p>edumeirelles@yahoo.com.br<br/>(16) 99260 - 1155</p>
+                        <p>edumeirelles@yahoo.com.br</p>
+                        <p>(16) 99260 - 1155</p>
 
                         <div class="bloco_icone">
                             <div class="icone">
@@ -151,7 +152,7 @@
                         </div>       
         
                     </div>
-                    
+
                     <div class="formacao"> <!--formação e habilidades-->
         
                         <h2>Formação</h2>
@@ -180,7 +181,7 @@
                                 
                                 {% for i in hard_skills %}
                                 <p>{{i.skill}}</p>
-                                <div class="barra-{{i.tag}}" style="@keyframes '{{i.tag}}' {from{width: 30px;} to{width: 100%; }}">
+                                <div class="barra-{{i.tag}}">
                                     <div class="barras" id="{{i.tag}}"></div>
                                 </div>
                                 {% endfor %}
@@ -312,8 +313,9 @@
                                 Eu e meus colegas Rafael Freitas e Jorge Teixeira, criamos um jogo de ficção interativa, onde o jogador deve escolher as ações de uma banda em turnê. 
                                 O jogador deve escolher as ações na sequência correta para acessar as músicas que serão tocadas durante o show. Foram incluidos eventos aleatórios,
                                  que podem ser disparados em certos momentos, que fazem o jogador voltar ao estado inicial do jogo. Dependendo das opções escolhidas, o jogador pode receber
-                                  recompensas ou punições. Ao final o jogo exibe um relatório com o desempenho do jogador. O jogo foi desenvolvido inteiramente em Python. Foi incluída a 
-                                  biblioteca Pygame para que fosse possível executar os arquivos de áudio. Clique <a href="https://github.com/edumeirelles/Blue_modulo1/tree/main/Projeto%20Jogo/Banda_T2B" target="_blank"><b>aqui</b></a> para acessar os códigos do projeto no meu GitHub.
+                                  recompensas ou punições. Ao final o jogo exibe um relatório com o desempenho do jogador. O jogo foi desenvolvido inteiramente em Python e executado no terminal do VS Code.
+                                   Foi incluída a biblioteca Pygame para que fosse possível executar os arquivos de áudio.
+                                    Clique <a href="https://github.com/edumeirelles/Blue_modulo1/tree/main/Projeto%20Jogo/Banda_T2B" target="_blank"><b>aqui</b></a> para acessar os códigos do projeto no meu GitHub.
                             </p>
                         </div>
                         
@@ -325,12 +327,20 @@
 
                     
                     <div class="item_projetos"> <!--Apresentação Kodular-->
-                        <div>
-                            <h1>imagem</h1>
+                        <div class="texto_portifolio">
+                            <h2>Apresentação - Kodular</h2>
+                            <p>Primeiro programa desenvolvido no curso de programação na BlueEdTech. Este pequeno programa foi feito na primeira aula do curso utilizando a plataforma Kodular. 
+                                Consiste em um programa simples, em que me apresento com uma foto e digo qual a minha cidade. 
+                                O objetivo do projeto foi introduzir os conceitos de Lógica de programação.
+                            </p>
                         </div>
-                        <div>
-                            <h1>texto</h1>
+                        <div class="imagem_portifolio">
+                            <img src="static/kodular.gif" alt="Apresentação Kodular">
                         </div>
+                    </div>
+
+                    <div class="bloco_divisoria">
+                        <div class="divisoria"></div>
                     </div>
                 </div>
                 

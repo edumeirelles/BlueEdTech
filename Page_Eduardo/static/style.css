@@ -98,7 +98,7 @@ body{
 }
 
 .perfil p, .perfil h1, .perfil h3{
-    margin: 0px;
+    margin-top: 5px;
 }
 
 .bloco_icone{
@@ -109,11 +109,25 @@ body{
     margin-top: 30px;
     margin-bottom: 30px;
 }
-
+.icone{
+    transition: 0.3s;
+    user-select: none;
+}
 .icone img{
     height: 50px;
 }
-
+.icone:hover{
+    transition: 0.3s;
+    transform: scale(1.15);
+}
+.click_icone{
+    transition: 0.3s;
+    transform: scale(1);
+    user-select: none;
+}
+.click_icone img{
+    height: 50px;
+}
 @media (max-width:768px){
     .resumo{
         flex-direction: column;
