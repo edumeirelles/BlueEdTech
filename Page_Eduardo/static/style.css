@@ -231,40 +231,44 @@ body{
         animation-name: sql;
     }
 }
+@media (prefers-reduced-motion: no-preference) {
+    .csharp-animacao{
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+        animation-name: csharp;
+    }
+}
 @keyframes python{
     from{width: 30px;}
-    to{width: 70%;
-    }
+    to{width: 70%;}
 }
 @keyframes html{
     from{width: 30px;}
-    to{width: 60%;
-    }
+    to{width: 60%;}
 }
 @keyframes java{
     from{width: 30px;}
-    to{width: 50%;
-    }
+    to{width: 50%;}
+}
+@keyframes csharp{
+    from{width: 30px;}
+    to{width: 60%;}
 }
 @keyframes sql{
     from{width: 30px;}
-    to{width: 60%;
-    }
+    to{width: 60%;}
 }
 @keyframes excel{
     from{width: 30px;}
-    to{width: 85%;
-    }
+    to{width: 85%;}
 }
 @keyframes word{
     from{width: 30px;}
-    to{width: 90%;
-    }
+    to{width: 90%;}
 }
 @keyframes ppoint{
     from{width: 30px;}
-    to{width: 75%;
-    }
+    to{width: 75%;}
 }
 
 

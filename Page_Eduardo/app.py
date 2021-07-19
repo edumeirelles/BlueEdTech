@@ -19,6 +19,11 @@ def index():
             'skill': 'JavaScript',
             'level': 50
         },{
+            'tag': 'csharp',
+            'skill': 'C#',
+            'level': 60
+
+        },{
             'tag': 'sql',
             'skill': 'SQL',
             'level': 60
