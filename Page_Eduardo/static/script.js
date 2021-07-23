@@ -53,26 +53,31 @@ for (const icone of icones){
     })
 }
 
-
-
-
-
-
 const divMainPerfil = document.getElementById("divMainPerfil");
-const divMainPortifolio = document.getElementById("divMainPortifolio")
+const divMainPortifolio = document.getElementById("divMainPortifolio");
+const divMainCertificado = document.getElementById("divMainCertificado");
 const portifolio = document.getElementById("portifolio");
 const perfil = document.getElementById("perfil");
+const certificado = document.getElementById("certificado");
 
 function selecionarItem(){
   if (portifolio.classList.contains('selecionado')){
     divMainPerfil.classList.add('div_main');
+    divMainCertificado.classList.add('div_main')
     divMainPortifolio.classList.remove('div_main')
   }
   if (perfil.classList.contains('selecionado')){
     divMainPerfil.classList.remove('div_main')
     divMainPortifolio.classList.add('div_main')
+    divMainCertificado.classList.add('div_main')
+  }
+  if (certificado.classList.contains('selecionado')){
+    divMainPerfil.classList.add('div_main')
+    divMainPortifolio.classList.add('div_main')
+    divMainCertificado.classList.remove('div_main')
   }
 }
 
 portifolio.addEventListener("click", selecionarItem)
 perfil.addEventListener("click", selecionarItem)
+certificado.addEventListener("click", selecionarItem)

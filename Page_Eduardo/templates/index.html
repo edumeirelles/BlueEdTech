@@ -8,163 +8,69 @@
             Eduardo Meirelles Nogueira - Desenvolvedor
         </title>
         <link rel="stylesheet" type="text/css" href="/static/style.css">
-
     </head>
     <body>
         <div class="div1">
-
             <div class="menu"> <!--menu-->
-
-                <div class="menu_item" id="perfil">
-                    <h3>Perfil</h3>
+                {% for i in menu %}
+                <div class="menu_item" id="{{i.tag}}">
+                    <h3>{{i.text}}</h3>
                 </div>
-                <div class="menu_item" id="portifolio">
-                    <h3>Portifolio</h3>
-                </div>
-
+                {% endfor %}
             </div>
         </div>
 
         <div id="divMainPerfil">
-
             <div class="div2">
-
                 <div class="resumo"> <!--foto, pequeno texto-->
-                
                     <div class="imagem">
                         <img src="static/eduardo.jpg" alt="Eduardo"/>
                     </div>
                     <div class="perfil item">
-
-                        <h1>Eduardo Meirelles Nogueira</h1>
-                        <h3>Desenvolvedor Python, HTML5, CSS3, C#, SQL </h3>
-                        <p>edumeirelles@yahoo.com.br</p>
-                        <p>(16) 99260 - 1155</p>
-
+                        {% for i in perfil %}
+                        <h1>{{i.nome}}</h1>
+                        <h3>{{i.objetivo}}</h3>
+                        <p>{{i.email}}</p>
+                        <p>{{i.telefone}}</p>
+                        {% endfor %}
                         <div class="bloco_icone">
+                            {% for i in icones %}
                             <div class="icone">
-                                <a href="http://www.linkedin.com/in/eduardo-meirelles-nogueira/" target="_blank"><img src="static/linkedin-white.png" alt="Logo LinkedIn"></a>
+                                <a href="{{i.link}}" target="_blank"><img src="{{i.src}}" alt="Logo {{i.icone}}"></a>
                             </div>
-                            <div class="icone">
-                                <a href="http://www.facebook.com/edumeirelles" target="_blank"><img src="static/facebook-white.png" alt="Logo Facebook"></a>
-                            </div>
-                            <div class="icone">
-                                <a href="http://www.github.com/edumeirelles" target="_blank"><img src="static/github-white.png" alt="Logo GitHub"></a>
-                            </div>
-                            <div class="icone">
-                                <a href="https://api.whatsapp.com/send?phone=5516992601155" target="_blank"><img src="static/whatsapp-white.png" alt="Logo WhatsApp"></a>
-                            </div>     
-                        </div>
-                                       
+                            {% endfor %}   
+                        </div>               
                     </div>
-
                 </div>
-
             </div>
     
             <div class="div3">
-
                 <div class="curriculo"> <!--currículo-->
-
                     <div class="experiencia"> <!--experiência-->
                         <h2>Experiência Profissional</h2>
+                        {% for i in experiencia %}
                         <div class="item">
-                            <h3>Bluemer - Estudante de Programação</h3>
-                            <p>BlueEdTech<br/>mai/2021 - Atualmente<br/><i>Home Office</i></p>
-                            <p>Atualmente sou estudante de programação e desenvolvimento na Blue EdTech</p>
+                            <h3>{{i.cargo}}</h3>
+                            <p>{{i.empresa}}<br/>{{i.periodo}}<br/><i>{{i.local}}</i></p>
+                            <p style="font-size:medium;">{{i.descricao}}</p>
+                                {% for v in i['items'] %}
                                 <ul>   
-                                    <li>Lógica de Programação</li>
-                                    <li>Desenvolvimento de Software</li>
-                                    <li>Analytics</li>
-                                    <li>Python, HTML5, CSS3, JavaScript, SQL, C#</li> 
+                                    <li>{{v}}</li> 
                                 </ul>
+                                {% endfor %}
                         </div>
-                        <div class="item">
-                            <h3>Day Trader</h3>
-                            <p>Autônomo<br/>mai/2020 - fev/2021<br/><i>Home Office</i></p>
-                                <ul>
-                                    <li>Operei no mercado financeiro operando mini contratos futuros de Dólar e Índice Bovespa</li>
-                                </ul>
-                        </div>
-                        <div class="item">
-                            <h3>Relacionamento com o Cliente</h3>
-                            <p>Break & Go<br/>mar/2018 - fev/2020<br/><i>São Paulo/SP</i></p>
-                                <ul>
-                                    <li>Atendimento ao cliente</li>
-                                    <li>Planejamento estratégico de prospecção e expansão</li>
-                                    <li>Análise de despesas e custos</li>
-                                    <li>Otimização de suprimentos</li>
-                                </ul>
-                                
-                        </div>
-                        <div class="item">
-                            <h3>Analista Administrativo</h3>
-                            <p>RIOVIVO - Saneamento e Sustentabilidade<br/>mar/2017 - jan/2018<br/><i>Home Office</i></p>
-                                <ul>
-                                    <li>Elaboração de relatórios gerenciais e indicadores de desempenho</li>
-                                    <li>Interface com o departamento municipal de água e esgoto de Uberlândia</li>
-                                    <li>Emissão de medição de serviços prestados para faturamento</li>
-                                    <li>Estimativa de faturamento de serviços futuros</li> 
-                                </ul>
-                                
-                        </div>
-                        <div class="item">
-                            <h3>Analista Administrativo</h3>
-                            <p>HMG Engenharia<br/>abr/2014 - mai/2016<br/><i>Pouso Alegre/MG</i></p>
-                                <ul>
-                                    <li>Responsável por rotinas administrativas, controle de fluxo de caixa, aquisições, cálculo de tributos, atendimento ao cliente, preparação de contratos imobiliários</li>
-                                    <li>Criação e administração do website da empresa, elaboração e gerenciamento de publicidade em mídias sociais e mídia impressa</li>
-                                    <li>Responsável por operações no mercado financeiro – Dólar e Índice Bovespa Futuros</li>
-                                </ul>
-                        </div>
-                        <div class="item">
-                            <h3>Analista Administrativo - M.I.S.</h3>
-                            <p>Sanchez & Sanchez Advogados Associados<br/>jan/2013 - fev/2014<br/><i>Ribeirão Preto/SP</i></p>
-                                <ul>
-                                    <li>Responsável pela elaboração de relatórios gerenciais e indicadores de desempenho</li>
-                                    <li>Atuação no setor de suporte cumprindo tratamento de informações e enriquecimento do banco de dados da empresa</li>
-                                    <li>Participação efetiva no projeto de implantação e migração de dados para o sistema integrado de cobrança</li>
-                                </ul>
-                        </div>
-                        <div class="item">
-                            <h3>Auxiliar de Logística</h3>
-                            <p>Espaço Livre Eventos<br/>ago/2012 - out/2012<br/><i>Ribeirão Preto/SP</i></p>
-                                <ul>
-                                    <li>Elaboração de cálculos para carregamento de materiais com o objetivo de maximizar a eficiência do transporte de materiais reduzindo custos da logística</li>
-                                </ul>
-                        </div>
-                        <div class="item">
-                            <h3>Técnico em Informática</h3>
-                            <p>CODERP<br/>fev/2009 - jul/2012<br/><i>Ribeirão Preto/SP</i></p>
-                                <ul>
-                                    <li>Manutenção, instalação e configuração de microcomputadores, impressoras e redes</li>
-                                    <li>Implantação da rede de fibra óptica para transmissão de dados entre as unidades públicas municipais</li>
-                                </ul>
-                        </div>
-                        <div class="item">
-                            <h3>Auxiliar Administrativo</h3>
-                            <p>Verocheque Refeições<br/>fev/2008 - set/2008<br/><i>Ribeirão Preto/SP</i></p>
-                                <ul>
-                                    <li>Cadastro de clientes</li>
-                                    <li>Suporte na área de T.I.</li>
-                                    <li>Auxiliar do setor financeiro</li>
-                                </ul>
-                        </div>       
-        
+                        {% endfor %}        
                     </div>
 
-                    <div class="formacao"> <!--formação e habilidades-->
-        
+                    <div class="formacao"> <!--formação e habilidades-->      
                         <h2>Formação</h2>
+                        {% for i in formacao %}
                         <div class="item">
-                            <h3>Gerenciamento de Projetos - Práticas do PMI</h3>
-                            <p>Centro Universitário SENAC - mar/2012 - dez/2013<br/><i>Ribeirão Preto/SP</i></p>
+                            <h3>{{i.curso}}</h3>
+                            <p>{{i.instituicao}} - {{i.periodo}}<br/><i>{{i.local}}</i></p>
                         </div>
-                        <div class="item">
-                            <h3>Administração</h3>
-                            <p>Universidade Paulista - UNIP - fev/2008 - dez/2011<br/><i>Ribeirão Preto/SP</i></p>                    
-                        </div>
-                    
+                        {% endfor %}
+                                         
                         <h2>Habilidades</h2>
                         <div class="item">
                             <h3>Soft Skills</h3>
@@ -174,57 +80,26 @@
                                     <li>{{i}}</li>
                                     {% endfor %}
                                 </ul>  
-                            </div>
-                                                  
+                            </div>                                                  
                             <h3>Hard Skills</h3>
-                            <div class="hard-skills">
-                                
+                            <div class="hard-skills">                          
                                 {% for i in hard_skills %}
                                 <p>{{i.skill}}</p>
                                 <div class="barra-{{i.tag}}">
                                     <div class="barras" id="{{i.tag}}"></div>
                                 </div>
                                 {% endfor %}
-
                             </div>
                         </div>
                         <h2>Cursos Complementares</h2>
+                        {% for i in cursos %}
                         <div class="item">
-                            <h3>Gestão do Risco de Mercado</h3>
+                            <h3>{{i.curso}}</h3>
                             <ul>
-                                <li>ANBIMA – (18h) - 2020</li>
+                                <li>{{i.instituicao}} – ({{i.duracao}}) – {{i.ano}}</li>
                             </ul>
                         </div>
-                        <div class="item">
-                            <h3>Planejamento de Investimentos</h3>
-                            <ul>
-                                <li>ANBIMA – (13h) - 2020</li>
-                            </ul>
-                        </div>
-                        <div class="item">
-                            <h3>Viver de Mercado 5.0 (Daytrade Dólar e Índice Bovespa)</h3>
-                            <ul>
-                                <li>Infomoney (35h) – 2020</li>
-                            </ul>
-                        </div>  
-                        <div class="item">
-                            <h3>Aprenda a Investir na Bolsa de Valores 3.0</h3>
-                            <ul>
-                                <li>Infomoney (40h) – 2020</li>
-                            </ul>
-                        </div>
-                        <div class="item">
-                            <h3>Fundamentals of Audio and Music Engineering - Musical Sound & Electronics</h3>
-                            <ul>
-                                <li>University of Rochester – 2013</li>
-                            </ul>
-                        </div>   
-                        <div class="item">
-                            <h3>Infraestrutura de Redes LAN & WAN</h3>
-                            <ul>
-                                <li>Center Cursos (40h) – 2012</li>
-                            </ul>
-                        </div> 
+                        {% endfor %}
                             
                         <h2>Idiomas</h2>
                         <div class="item">
@@ -250,21 +125,18 @@
                             </ul>
                         </div>
                     </div>
-
                 </div>
-
             </div>
             
-
         </div>
         <div id="divMainPortifolio" class="div_main">
             <div class="div2 portifolio">
                 <div class="projetos"> 
-                    <div class="projetos_titulo">
+                    <div class="titulo">
                         <h1>Projetos</h1>
                     </div>
 
-                    <div class="item_projetos"> <!--Site-->
+                    <div class="item_projetos"> <!--Projeto Módulo 2-->
                                              
                         <div class="texto_portifolio">
                             <h2>Estatísticas Formula 1 - Projeto Final Módulo 2 na Blue Edtech</h2>
@@ -323,13 +195,12 @@
                         <div class="divisoria"></div>
                     </div>
                     
-                    <div class="item_projetos"> <!--Jogo Ficção Interativa Python-->
-                        
+                    <div class="item_projetos"> <!--Jogo Ficção Interativa Python-->   
                         <div class="imagem_portifolio">
                             <img src="static/Projeto_jogo.gif" alt="Projeto Jogo Ficção interativa">
                         </div>
                         <div class="texto_portifolio">
-                            <h2>Jogo Ficção Interativa - Banda Turma2B</h2>
+                            <h2>Jogo Ficção Interativa - Banda Turma2B - Projeto Final Módulo 1 na Blue Edtech</h2>
                             <p>Este foi o projeto final do Módulo 1 no curso de programação na BlueEdTech. 
                                 Eu e meus colegas Rafael Freitas e Jorge Teixeira, criamos um jogo de ficção interativa, onde o jogador deve escolher as ações de uma banda em turnê. 
                                 O jogador deve escolher as ações na sequência correta para acessar as músicas que serão tocadas durante o show. Foram incluidos eventos aleatórios,
@@ -338,8 +209,7 @@
                                    Foi incluída a biblioteca Pygame para que fosse possível executar os arquivos de áudio.
                                     Clique <a href="https://github.com/edumeirelles/Blue_modulo1/tree/main/Projeto%20Jogo/Banda_T2B" target="_blank"><b>aqui</b></a> para acessar os códigos do projeto no meu GitHub.
                             </p>
-                        </div>
-                        
+                        </div>  
                     </div>
 
                     <div class="bloco_divisoria">
@@ -363,14 +233,20 @@
                     <div class="bloco_divisoria">
                         <div class="divisoria"></div>
                     </div>
+                </div> 
+            </div>
+        </div>
+        <div id="divMainCertificado" class="div_main">
+            <div class="div2 certificado">
+                <div class="titulo">
+                    <h1>Certificados</h1>
                 </div>
-                
                 
             </div>
         </div>
-        <!--<div> 
+        <div class="rodape"> 
             <h3>2021 - Desenvolvido por Eduardo Meirelles Nogueira</h3>
-        </div>-->
+        </div>
         <script type="text/javascript" src="/static/script.js"></script>
     </body>
 </html>
