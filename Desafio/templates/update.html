@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estatísticas Formula 1</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body>
+    {% include 'header.html' %}
+    
+    {% if not sucesso %}
+
+    <h1 class="display-4" style="margin: 0 31px;">Editar Registro {{registro.nome}}</h1>
+    
+     
+    <form action="" method="POST" style="padding: 10px 31px;">
+        <div class="mb-3">
+            {% for i in labels %}
+                <div >
+                {% for k,v in i.items() %}
+                    <label class="form-label" for="{{k}}">{{v}} </label> 
+                    {% if k!= 'telefone' %}
+                    <input type="text" class="form-control" name="{{k}}" id="{{k}}" value="{{registro[k]}}"/>
+                    {% else %}
+                    <input type="text" class="form-control" name="{{k}}" id="{{k}}" value="{{registro[k]}}" onkeypress="if ( isNaN( String.fromCharCode(event.keyCode) )) return false;"/>
+                    {% endif %}
+                {% endfor %}
+                </div> 
+            {% endfor %}        
+        </div> 
+        <input type="submit" value="Enviar Dados" class="btn btn-primary" />           
+    </form>
+    
+
+    {% else %}
+
+        <div style="padding: 31px;" >
+            <span class="alert alert-success">Registro editado com sucesso!</span><br /><br />
+            <a class="btn btn-primary" href="/read/{{registro.id}}">Visualizar esse registro</a>
+        </div>
+
+    {% endif %}     
+</body>
+</html>

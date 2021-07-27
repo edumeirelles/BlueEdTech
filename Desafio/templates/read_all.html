@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Pessoas - Projeto Calcme</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+    {% include 'header.html' %}
+    <h1 class="display-4" style="margin: 0 31px;">Todos os Registros</h1>
+    
+    <div style="padding: 10px 31px;">
+        <table class="table table-striped" >
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Nome</th>
+                <th scope="col">E-mail</th>
+                <th scope="col">Telefone</th>
+                <td></td>
+            </tr>
+            {% for registro in registros %}
+                <tr>
+                    <td>{{ registro["id"] }}</td>
+                    <td>{{ registro["nome"] }}</td>
+                    <td>{{ registro["email"] }}</td>
+                    <td>{{ registro["telefone"] }}</td>
+                    <td>
+                        <div class="btn-group" role="group" aria-label="Basic outlined example">
+                            <a href="/read/{{ registro['id'] }}" class="btn btn-primary">Visualizar</a>
+                            <a href="/update/{{ registro['id'] }}" class="btn btn-primary">Editar</a>
+                            <a href="/delete/{{ registro['id'] }}" class="btn btn-primary">Remover</a>
+                        </div>
+                    </td>
+                </tr>
+            {% endfor %}
+        </table>
+    </div>
+    
+</body>
+</html>
