@@ -104,17 +104,22 @@
                         <h2>Idiomas</h2>
                         <div class="item">
                             <ul>
-                                <li><h3>Inglês Avançado</h3></li>
-                                <li><h3>Espanhol Básico</h3></li>
+                                {% for i in idiomas %}
+                                <li><h3>{{i}}</h3></li>
+                                {% endfor %}
                             </ul>
                         </div>
                         <h2>Experiência Internacional</h2>
                         <div class="item">
-                            <h3>Estados Unidos </h3>
-                            <p>Okemo Mountain Resort - Vermont - dez/2010 - mar/2011</p>
+                            {% for i in internacional %}
+                            <h3>{{i.pais}}</h3>
+                            <p>{{i.local}} - {{i.periodo}}</p>
                             <ul>
-                                <li>Programa Work and Travel</li>
+                                {% for v in i['descricao'] %} 
+                                <li>{{v}}</li>
+                                {% endfor %}
                             </ul>
+                            {% endfor %}
                         </div>
                         <h2>Interesses</h2>
                         <div class="item">
@@ -135,104 +140,31 @@
                     <div class="titulo">
                         <h1>Projetos</h1>
                     </div>
-
-                    <div class="item_projetos"> <!--Projeto Módulo 2-->
-                                             
+                    <div class="bloco_divisoria">
+                        <div class="divisoria"></div>
+                    </div>
+                    {% for i in projetos %} 
+                    <div class="item_projetos"> <!--Projeto Módulo 2-->                   
                         <div class="texto_portifolio">
-                            <h2>Estatísticas Formula 1 - Projeto Final Módulo 2 na Blue Edtech</h2>
-                            <p>Projeto final do Módulo 2 no curso de programação na Blue EdTech, feito por mim e meus colegas Rosicleia Furst e Leonardo Vinicius.
-                                O projeto foi desenvolvido para reunir todos os conhecimentos adquiridos no módulo. As linguagens utilizadas são HTML5, CSS3, Python (Flask) e SQL e 
-                                foi colocado no ar como uma aplicação em nuvem na plataforma Heroku.
-                                  Clique <a href="https://github.com/edumeirelles/Projeto_formula1" target="_blank"><b>aqui</b></a> para acessar os códigos desta página no meu GitHub e
-                                  <a href="https://statsformula1.herokuapp.com/" target="_blank"><b>aqui</b></a> para acessar a página do projeto.
-                            </p>
+                            <h2>{{i.nome}}</h2>
+                            <p>{{i.descricao}}</p>
+                            <br />
+                            {% if i.git != '' %}
+                                <p><a href="{{i.git}}" target="_blank"><b>GitHub</b></a><br />
+                            {% endif %}
+                            {% if i.link != '' %}
+                                <a href="{{i.link}}"><b>Link do Projeto</b></a>
+                            {% endif %}
+                                </p>                           
                         </div>
                         <div class="imagem_portifolio">
-                            <img src="static/statsf1.png" alt="Estatísticas Formula 1">
+                            <img src="{{i.img}}" alt="{{i.nome}}">
                         </div> 
                     </div>
-
                     <div class="bloco_divisoria">
                         <div class="divisoria"></div>
                     </div>
-
-                    <div class="item_projetos"> <!--Site-->
-                        <div class="imagem_portifolio">
-                            <img src="static/page_eduardo.png" alt="Site Eduardo">
-                        </div>                       
-                        <div class="texto_portifolio">
-                            <h2>Website Pessoal - Eduardo Meirelles Nogueira</h2>
-                            <p>Este é meu website pessoal, onde apresento meu perfil profissional e os projetos que desenvolvi como programador.
-                                Ele foi concebido com dois propósitos. Primeiramente para servir de apresentação da minha carreira e dos meus objetivos profissionais
-                                 e, por outro lado, para aplicar os conhecimentos adquiridos em aula durante os Módulos 1 e 2 do curso de programação na BlueEdTech.
-                                  Este projeto foi elaborado paralelamente às atividades do curso. O site foi desenvolvido com as linguagens HTML5, 
-                                  CSS3, JavaScript e Python com Flask. Foi publicado como uma aplicação em nuvem na plataforma Heroku. 
-                                  Clique <a href="https://github.com/edumeirelles/Pessoal/tree/main/Page_Eduardo" target="_blank"><b>aqui</b></a> para acessar os códigos desta página no meu GitHub.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="bloco_divisoria">
-                        <div class="divisoria"></div>
-                    </div>
-
-                    <div class="item_projetos"><!--Calculadora dano - Kodular-->
-                        <div class="texto_portifolio">
-                            <h2>Calculadora de Dano</h2>
-                            <p>A Calculadora de Dano foi uma atividade desenvolvida no curso de programação na BlueEdTech para colocar em prática o aprendizado em HTML, CSS e JavaScript. 
-                                O jogo consiste em escolher um inimigo e uma arma. 
-                                Cada inimigo possui um quantidade fixa de pontos de vida e cada arma conta com um número de dano fixo adicionado de um número que é gerado aleatoriamente de 1 a 10 pontos (análogo a um dado de 10 faces).
-                                O jogador deve clicar no botão "Calcular Dano" até que o dano da arma seja maior ou igual os pontos de vida do inimigo escolhido.
-                                 Dependendo da arma escolhida não será possível derrotar os inimigos mais fortes. Clique <a href="https://github.com/edumeirelles/Blue_modulo2/tree/main/Aula_09/Projeto_01_Calculadora_de_danos_JS" target="_blank"><b>aqui</b></a> para acessar os códigos deste projeto no meu GitHub.
-                            </p>
-                        </div>
-                        <div class="imagem_portifolio">
-                            <img src="static/calculadora_dano.png" alt="Calduladora de Dano">
-                        </div>
-                    </div>
-
-                    <div class="bloco_divisoria">
-                        <div class="divisoria"></div>
-                    </div>
-                    
-                    <div class="item_projetos"> <!--Jogo Ficção Interativa Python-->   
-                        <div class="imagem_portifolio">
-                            <img src="static/Projeto_jogo.gif" alt="Projeto Jogo Ficção interativa">
-                        </div>
-                        <div class="texto_portifolio">
-                            <h2>Jogo Ficção Interativa - Banda Turma2B - Projeto Final Módulo 1 na Blue Edtech</h2>
-                            <p>Este foi o projeto final do Módulo 1 no curso de programação na BlueEdTech. 
-                                Eu e meus colegas Rafael Freitas e Jorge Teixeira, criamos um jogo de ficção interativa, onde o jogador deve escolher as ações de uma banda em turnê. 
-                                O jogador deve escolher as ações na sequência correta para acessar as músicas que serão tocadas durante o show. Foram incluidos eventos aleatórios,
-                                 que podem ser disparados em certos momentos, que fazem o jogador voltar ao estado inicial do jogo. Dependendo das opções escolhidas, o jogador pode receber
-                                  recompensas ou punições. Ao final o jogo exibe um relatório com o desempenho do jogador. O jogo foi desenvolvido inteiramente em Python e executado no terminal do VS Code.
-                                   Foi incluída a biblioteca Pygame para que fosse possível executar os arquivos de áudio.
-                                    Clique <a href="https://github.com/edumeirelles/Blue_modulo1/tree/main/Projeto%20Jogo/Banda_T2B" target="_blank"><b>aqui</b></a> para acessar os códigos do projeto no meu GitHub.
-                            </p>
-                        </div>  
-                    </div>
-
-                    <div class="bloco_divisoria">
-                        <div class="divisoria"></div>
-                    </div>
-
-                    
-                    <div class="item_projetos"> <!--Apresentação Kodular-->
-                        <div class="texto_portifolio">
-                            <h2>Apresentação - Kodular</h2>
-                            <p>Primeiro programa desenvolvido no curso de programação na BlueEdTech. Este pequeno programa foi feito na primeira aula do curso utilizando a plataforma Kodular. 
-                                Consiste em um programa simples, em que me apresento com uma foto e digo qual a minha cidade. 
-                                O objetivo do projeto foi introduzir os conceitos de Lógica de programação.
-                            </p>
-                        </div>
-                        <div class="imagem_portifolio">
-                            <img src="static/kodular.gif" alt="Apresentação Kodular">
-                        </div>
-                    </div>
-
-                    <div class="bloco_divisoria">
-                        <div class="divisoria"></div>
-                    </div>
+                    {% endfor %}
                 </div> 
             </div>
         </div>
