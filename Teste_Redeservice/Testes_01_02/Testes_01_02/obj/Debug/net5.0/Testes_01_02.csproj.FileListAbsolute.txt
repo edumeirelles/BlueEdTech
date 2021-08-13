@@ -1,0 +1,16 @@
+D:\OneDrive\Blue\Repositórios\Pessoal\Teste_Redeservice\Testes_01_02\Testes_01_02\bin\Debug\net5.0\Testes_01_02.exe
+D:\OneDrive\Blue\Repositórios\Pessoal\Teste_Redeservice\Testes_01_02\Testes_01_02\bin\Debug\net5.0\Testes_01_02.deps.json
+D:\OneDrive\Blue\Repositórios\Pessoal\Teste_Redeservice\Testes_01_02\Testes_01_02\bin\Debug\net5.0\Testes_01_02.runtimeconfig.json
+D:\OneDrive\Blue\Repositórios\Pessoal\Teste_Redeservice\Testes_01_02\Testes_01_02\bin\Debug\net5.0\Testes_01_02.runtimeconfig.dev.json
+D:\OneDrive\Blue\Repositórios\Pessoal\Teste_Redeservice\Testes_01_02\Testes_01_02\bin\Debug\net5.0\Testes_01_02.dll
+D:\OneDrive\Blue\Repositórios\Pessoal\Teste_Redeservice\Testes_01_02\Testes_01_02\bin\Debug\net5.0\ref\Testes_01_02.dll
+D:\OneDrive\Blue\Repositórios\Pessoal\Teste_Redeservice\Testes_01_02\Testes_01_02\bin\Debug\net5.0\Testes_01_02.pdb
+D:\OneDrive\Blue\Repositórios\Pessoal\Teste_Redeservice\Testes_01_02\Testes_01_02\obj\Debug\net5.0\Testes_01_02.csproj.AssemblyReference.cache
+D:\OneDrive\Blue\Repositórios\Pessoal\Teste_Redeservice\Testes_01_02\Testes_01_02\obj\Debug\net5.0\Testes_01_02.GeneratedMSBuildEditorConfig.editorconfig
+D:\OneDrive\Blue\Repositórios\Pessoal\Teste_Redeservice\Testes_01_02\Testes_01_02\obj\Debug\net5.0\Testes_01_02.AssemblyInfoInputs.cache
+D:\OneDrive\Blue\Repositórios\Pessoal\Teste_Redeservice\Testes_01_02\Testes_01_02\obj\Debug\net5.0\Testes_01_02.AssemblyInfo.cs
+D:\OneDrive\Blue\Repositórios\Pessoal\Teste_Redeservice\Testes_01_02\Testes_01_02\obj\Debug\net5.0\Testes_01_02.csproj.CoreCompileInputs.cache
+D:\OneDrive\Blue\Repositórios\Pessoal\Teste_Redeservice\Testes_01_02\Testes_01_02\obj\Debug\net5.0\Testes_01_02.dll
+D:\OneDrive\Blue\Repositórios\Pessoal\Teste_Redeservice\Testes_01_02\Testes_01_02\obj\Debug\net5.0\ref\Testes_01_02.dll
+D:\OneDrive\Blue\Repositórios\Pessoal\Teste_Redeservice\Testes_01_02\Testes_01_02\obj\Debug\net5.0\Testes_01_02.pdb
+D:\OneDrive\Blue\Repositórios\Pessoal\Teste_Redeservice\Testes_01_02\Testes_01_02\obj\Debug\net5.0\Testes_01_02.genruntimeconfig.cache
