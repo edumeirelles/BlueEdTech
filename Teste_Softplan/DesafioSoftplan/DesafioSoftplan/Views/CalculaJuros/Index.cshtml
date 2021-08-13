@@ -1,0 +1,32 @@
+﻿@model calculaJuros
+
+
+<h3>Calcular Valor Final</h3>
+
+<div class="row">
+    <form class="col-md-4" asp-action="Index">
+        <div class="form-group">
+            <label class="control-label" asp-for="ValorInicial"></label>
+            <input class="form-control" asp-for="ValorInicial" />
+            <span class="text-danger" asp-validation-for="ValorInicial"></span>
+        </div>
+        <div class="form-group">                                        
+            <label class="control-label" asp-for="Tempo"></label>       
+            <input class="form-control" asp-for="Tempo" />              
+            <span class="text-danger" asp-validation-for="Tempo"></span>
+        </div>   
+        <div class="form-group">
+            <p>Taxa de Juros: @(ViewBag.taxaJuros * 100)% a.m.</p>
+        </div>
+
+
+        <input type="submit" value="Calcular Valor Final!" class="btn btn-primary" />
+        <br /><br />
+        <h4>Valor Final: R$ @String.Format("{0:#,000.00}", Model.ValorFinal)</h4>
+    </form>
+    
+</div>
+
+
+
+
