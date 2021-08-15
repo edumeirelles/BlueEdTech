@@ -1,8 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using DesafioSoftplan.Models;
+using Microsoft.AspNetCore.Mvc;
 
 namespace DesafioSoftplan.Controllers
 {
@@ -10,8 +7,9 @@ namespace DesafioSoftplan.Controllers
     {
         public IActionResult Index()
         {
-            
-            return View();
+            showMeTheCode showMeTheCode = new();
+
+            return View(showMeTheCode);
         }
     }
 }

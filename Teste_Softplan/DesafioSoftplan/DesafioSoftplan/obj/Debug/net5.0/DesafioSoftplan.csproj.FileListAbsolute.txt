@@ -357,3 +357,4 @@ D:\OneDrive\Blue\Repositórios\Pessoal\Teste_Softplan\DesafioSoftplan\DesafioSof
 D:\OneDrive\Blue\Repositórios\Pessoal\Teste_Softplan\DesafioSoftplan\DesafioSoftplan\obj\Debug\net5.0\DesafioSoftplan.genruntimeconfig.cache
 D:\OneDrive\Blue\Repositórios\Pessoal\Teste_Softplan\DesafioSoftplan\DesafioSoftplan\obj\Debug\net5.0\Razor\Views\TaxaJuros\Index.cshtml.g.cs
 D:\OneDrive\Blue\Repositórios\Pessoal\Teste_Softplan\DesafioSoftplan\DesafioSoftplan\obj\Debug\net5.0\Razor\Views\CalculaJuros\Index.cshtml.g.cs
+D:\OneDrive\Blue\Repositórios\Pessoal\Teste_Softplan\DesafioSoftplan\DesafioSoftplan\obj\Debug\net5.0\Razor\Views\ShowMeTheCode\Index.cshtml.g.cs

@@ -1,15 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace DesafioSoftplan.Models
+﻿namespace DesafioSoftplan.Models
 {
     public class showMeTheCode
     {
         public showMeTheCode()
         {
-            this.URL = ""
+            this.URL = "https://github.com/edumeirelles/Pessoal/tree/main/Teste_Softplan/DesafioSoftplan";
         }
         public string URL { get; set; }
     }
