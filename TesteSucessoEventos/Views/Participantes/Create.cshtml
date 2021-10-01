@@ -1,0 +1,42 @@
+﻿@model Participante
+
+
+<h2>Cadastrar Novo Participante</h2>
+
+<div class="row">
+    <form class="col-md-4" asp-action="Create">
+        <div class="form-group">
+            <label class="control-label" asp-for="Name"></label>
+            <input class="form-control" asp-for="Name" />
+            <span class="text-danger" asp-validation-for="Name"></span>
+        </div>
+        <div class="form-group">
+            <label class="control-label" asp-for="BirthDate"></label>
+            <input class="form-control" asp-for="BirthDate" />
+        </div>
+        <div class="form-group">
+            <label class="control-label" asp-for="Phone"></label>
+            <input class="form-control" asp-for="Phone" />
+        </div>
+        <div class="form-group">
+            <label class="control-label" asp-for="PacoteId"></label>
+            <select class="form-control" asp-for="PacoteId" asp-items="ViewBag.pacotes">
+                <option value="">--Selecione um Pacote--</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label class="control-label" asp-for="Atividades"></label> <!--NÃO ESTÁ FUNCIONAL-->
+            <br />
+            @foreach (Atividade atividade in ViewBag.atividades)
+            {
+                <input type="checkbox" /><label>@atividade.DescAtv</label>
+                                         <br />
+            }
+
+
+        </div>
+        
+        <input type="submit" value="Cadastrar!" class="btn btn-primary" />
+        <a class="btn btn-primary" asp-controller="Participantes" asp-action="Index">Voltar</a>
+    </form>
+</div>
