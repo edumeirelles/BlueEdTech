@@ -1,0 +1,22 @@
+﻿@model Driver
+
+<h2>@Model.FullName</h2>
+<br /><hr />
+<h3>Endereço</h3>
+<br /><br />
+<p>@Html.DisplayNameFor(Model => Model.AddressLine1): @Html.DisplayFor(Model => Model.AddressLine1)</p>
+<p>@Html.DisplayNameFor(Model => Model.AddressLine2): @Html.DisplayFor(Model => Model.AddressLine2)</p>
+<p>@Html.DisplayNameFor(Model => Model.AddressZip): @Html.DisplayFor(Model => Model.AddressZip)</p>
+<p>@Html.DisplayNameFor(Model => Model.AddressCity): @Html.DisplayFor(Model => Model.AddressCity)</p>
+<p>@Html.DisplayNameFor(Model => Model.AddressState): @Html.DisplayFor(Model => Model.AddressState)</p>
+<br /><hr />
+<h3>Dados do Caminhão</h3>
+<br /><br />
+<p>@Html.DisplayNameFor(Model => Model.Brand): @Html.DisplayFor(Model => Model.Brand)</p>
+<p>@Html.DisplayNameFor(Model => Model.Model): @Html.DisplayFor(Model => Model.Model)</p>
+<p>@Html.DisplayNameFor(Model => Model.LicencePlate): @Html.DisplayFor(Model => Model.LicencePlate)</p>
+<p>@Html.DisplayNameFor(Model => Model.Axes): @Html.DisplayFor(Model => Model.Axes)</p>
+
+<br />
+<br />
+<a class="btn btn-primary" asp-controller="Driver" asp-action="Index">Voltar</a>

@@ -1,0 +1,5 @@
+﻿@model Driver
+
+<h3>Deseja remover a Morotista @Model.FullName?</h3>
+<a class="btn btn-primary" asp-controller="Driver" asp-action="Delete" asp-route-id="@Model.Id">Sim</a>
+<a class="btn btn-danger" asp-controller="Driver" asp-action="Index">Não</a>

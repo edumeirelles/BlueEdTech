@@ -1,0 +1,64 @@
+﻿@model Driver
+
+<h2>Adicionar novo Motorista</h2>
+
+<div class="row">
+    <form class="col-md-4" asp-action="Create">
+        <div class="form-group">
+            <label class="control-label" asp-for="FullName"></label>
+            <input class="form-control" asp-for="FullName" />
+            <span class="text-danger" asp-validation-for="FullName"></span>
+        </div>
+        <hr />
+        <h3>Endereço</h3>
+        <div class="form-group">
+            <label class="control-label" asp-for="AddressLine1"></label>
+            <input class="form-control" asp-for="AddressLine1" />
+            <span class="text-danger" asp-validation-for="AddressLine1"></span>
+        </div>
+        <div class="form-group">
+            <label class="control-label" asp-for="AddressLine2"></label>
+            <input class="form-control" asp-for="AddressLine2" />
+            <span class="text-danger" asp-validation-for="AddressLine2"></span>
+        </div>
+        <div class="form-group">
+            <label class="control-label" asp-for="AddressZip"></label>
+            <input class="form-control" asp-for="AddressZip" />
+            <span class="text-danger" asp-validation-for="AddressZip"></span>
+        </div>
+        <div class="form-group">
+            <label class="control-label" asp-for="AddressCity"></label>
+            <input class="form-control" asp-for="AddressCity" />
+            <span class="text-danger" asp-validation-for="AddressCity"></span>
+        </div>
+        <div class="form-group">
+            <label class="control-label" asp-for="AddressState"></label>
+            <input class="form-control" asp-for="AddressState" />
+            <span class="text-danger" asp-validation-for="AddressState"></span>
+        </div>
+        <hr />
+        <h3>Dados do Caminhão</h3>
+        <div class="form-group">
+            <label class="control-label" asp-for="Brand"></label>
+            <input class="form-control" asp-for="Brand" />
+            <span class="text-danger" asp-validation-for="Brand"></span>
+        </div>
+        <div class="form-group">
+            <label class="control-label" asp-for="Model"></label>
+            <input class="form-control" asp-for="Model" />
+            <span class="text-danger" asp-validation-for="Model"></span>
+        </div>
+        <div class="form-group">
+            <label class="control-label" asp-for="LicencePlate"></label>
+            <input class="form-control" asp-for="LicencePlate" />
+            <span class="text-danger" asp-validation-for="LicencePlate"></span>
+        </div>
+        <div class="form-group">
+            <label class="control-label" asp-for="Axes"></label>
+            <input class="form-control" asp-for="Axes" />
+            <span class="text-danger" asp-validation-for="Axes"></span>
+        </div>
+        <input type="submit" value="Cadastrar" class="btn btn-primary" />
+        <a class="btn btn-primary" asp-controller="Driver" asp-action="Index">Voltar</a>
+    </form>
+</div>

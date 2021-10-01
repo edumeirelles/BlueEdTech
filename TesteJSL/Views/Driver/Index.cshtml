@@ -1,0 +1,22 @@
+﻿@model List<Driver>
+
+    <h2>Lista de Motoristas</h2>
+    <br />
+    <a class="btn btn-primary" asp-controller="Driver" asp-action="Create">Cadastrar novo Motorista</a>
+    <br /><br />
+    <div class="row">
+        @foreach (Driver driver in Model)
+        {
+            <div class="card col-md-4 col-sm-5 clearfix ">
+                <div class="card-body">
+                    <h5 class="card-title">@Html.DisplayFor(Model => driver.FullName)</h5>
+                    <p class="card-text">@Html.DisplayFor(Model => driver.Brand) @Html.DisplayFor(Model => driver.Model) - @Html.DisplayFor(Model => driver.LicencePlate)</p>
+                </div>
+                <div class="card-footer">
+                    <a asp-controller="Driver" asp-action="Read" asp-route-id="@driver.Id" class="card-link">Detalhes</a>
+                    <a asp-controller="Driver" asp-action="Update" asp-route-id="@driver.Id" class="card-link">Editar</a>
+                    <a asp-controller="Driver" asp-action="Confirm" asp-route-id="@driver.Id" class="card-link">Apagar</a>
+                </div>
+            </div>
+        }
+    </div>
