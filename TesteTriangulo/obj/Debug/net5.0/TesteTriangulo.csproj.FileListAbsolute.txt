@@ -1,0 +1,16 @@
+D:\OneDrive\Blue\Repositórios\TesteTriangulo\obj\Debug\net5.0\TesteTriangulo.csproj.AssemblyReference.cache
+D:\OneDrive\Blue\Repositórios\TesteTriangulo\obj\Debug\net5.0\TesteTriangulo.GeneratedMSBuildEditorConfig.editorconfig
+D:\OneDrive\Blue\Repositórios\TesteTriangulo\obj\Debug\net5.0\TesteTriangulo.AssemblyInfoInputs.cache
+D:\OneDrive\Blue\Repositórios\TesteTriangulo\obj\Debug\net5.0\TesteTriangulo.AssemblyInfo.cs
+D:\OneDrive\Blue\Repositórios\TesteTriangulo\obj\Debug\net5.0\TesteTriangulo.csproj.CoreCompileInputs.cache
+D:\OneDrive\Blue\Repositórios\TesteTriangulo\bin\Debug\net5.0\TesteTriangulo.exe
+D:\OneDrive\Blue\Repositórios\TesteTriangulo\bin\Debug\net5.0\TesteTriangulo.deps.json
+D:\OneDrive\Blue\Repositórios\TesteTriangulo\bin\Debug\net5.0\TesteTriangulo.runtimeconfig.json
+D:\OneDrive\Blue\Repositórios\TesteTriangulo\bin\Debug\net5.0\TesteTriangulo.runtimeconfig.dev.json
+D:\OneDrive\Blue\Repositórios\TesteTriangulo\bin\Debug\net5.0\TesteTriangulo.dll
+D:\OneDrive\Blue\Repositórios\TesteTriangulo\bin\Debug\net5.0\ref\TesteTriangulo.dll
+D:\OneDrive\Blue\Repositórios\TesteTriangulo\bin\Debug\net5.0\TesteTriangulo.pdb
+D:\OneDrive\Blue\Repositórios\TesteTriangulo\obj\Debug\net5.0\TesteTriangulo.dll
+D:\OneDrive\Blue\Repositórios\TesteTriangulo\obj\Debug\net5.0\ref\TesteTriangulo.dll
+D:\OneDrive\Blue\Repositórios\TesteTriangulo\obj\Debug\net5.0\TesteTriangulo.pdb
+D:\OneDrive\Blue\Repositórios\TesteTriangulo\obj\Debug\net5.0\TesteTriangulo.genruntimeconfig.cache
